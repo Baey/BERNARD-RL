@@ -4,11 +4,10 @@
 # SPDX-License-Identifier: BSD-3-Clause
 
 """
-Python module with BERNARD RL extension.
+Python module with the BERNARD robot model and configuration.
 """
 
 # Register Gym environments.
-from .tasks import *
+from .bernard import BERNARD_CFG
 
-# Register UI extensions.
-from .ui_extension_example import *
+__all__ = ["BERNARD_CFG"]

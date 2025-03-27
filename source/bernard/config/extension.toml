@@ -7,12 +7,12 @@ version = "0.1.0"
 category = "isaaclab"
 readme  = "README.md"
 
-title = "BERNARD Reinforcement Learning"
+title = "BERNARD Robot"
 author = "Błażej Szargut"
 maintainer = "Błażej Szargut"
-description="IsaacLab extension with BERNARD bipedal robot reinforcement learning tasks"
+description="IsaacLab extension with BERNARD bipedal model and configuration"
 repository = "https://github.com/isaac-sim/IsaacLab.git"
-keywords = ["kit", "robotics", "isaacsim", "isaaclab", "bernard", "rl"]
+keywords = ["kit", "robotics", "isaacsim", "isaaclab", "bernard"]
 
 [dependencies]
 "isaaclab" = {}
