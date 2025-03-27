@@ -1,7 +1,7 @@
-# Copyright (c) 2024-2025, Błażej Szargut.
+# Copyright (c) 2025, Błażej Szargut.
 # All rights reserved.
 #
-# SPDX-License-Identifier: BSD-3-Clause
+# SPDX-License-Identifier: MIT
 
 """Configuration for BERNARD bipedal robot.
 
@@ -13,6 +13,7 @@ Reference: https://github.com/UMich-BipedLab/Cassie_Model/blob/master/urdf/cassi
 """
 
 import os
+
 import isaaclab.sim as sim_utils
 from isaaclab.actuators import ImplicitActuatorCfg
 from isaaclab.assets.articulation import ArticulationCfg
@@ -64,9 +65,7 @@ BERNARD_CFG = ArticulationCfg(
             stiffness={
                 ".*": 1.0,
             },
-            damping={
-                ".*": 0.1
-            },
+            damping={".*": 0.1},
         ),
         "passive": ImplicitActuatorCfg(
             joint_names_expr=[".*_foot_.*"],
@@ -75,9 +74,7 @@ BERNARD_CFG = ArticulationCfg(
             stiffness={
                 ".*": 0.0,
             },
-            damping={
-                ".*": 0.05
-            },
+            damping={".*": 0.05},
         ),
-    }
+    },
 )

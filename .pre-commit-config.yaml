@@ -59,7 +59,7 @@ repos:
         args:
           # - --remove-header    # Remove existing license headers. Useful when updating license.
           - --license-filepath
-          - .github/LICENSE_HEADER.txt
+          - .git/LICENSE_HEADER.txt
           - --use-current-year
         exclude: "source/isaaclab_mimic/|scripts/imitation_learning/isaaclab_mimic/"
   # Apache 2.0 license for mimic files
@@ -71,7 +71,7 @@ repos:
         args:
           # - --remove-header    # Remove existing license headers. Useful when updating license.
           - --license-filepath
-          - .github/LICENSE_HEADER_MIMIC.txt
+          - .git/LICENSE_HEADER_MIMIC.txt
           - --use-current-year
   - repo: https://github.com/pre-commit/pygrep-hooks
     rev: v1.10.0
